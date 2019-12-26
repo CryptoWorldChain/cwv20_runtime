@@ -1,0 +1,25 @@
+version = '0.0.1'
+project.group='org.brewchain'
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+
+sourceSets {
+    main {
+        java {
+            srcDir("$projectDir/src")
+        }
+    }
+}
+jar {
+    manifest {
+        attributes("Main-Class": "onight.ofw.starter.Main")
+    }
+}
+dependencies {
+    compileOnly 'org.osgi:org.osgi.core:6.0.0'
+    compile 'org.apache.felix:org.apache.felix.main:6.0.1'
+}
+
