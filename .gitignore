@@ -13,4 +13,9 @@ logs
 .classpath
 .settings/
 .project
+conf/startup.properties
 
+felix-cache/
+db/
+gradlew*
+hs_err*.log
