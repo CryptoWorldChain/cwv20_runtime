@@ -87,12 +87,12 @@
     </appender>
 
     <!-- Root -->
-    <root level="error">
+    <root level="debug">
         <!-- <appender-ref ref="STDOUT" /> -->
         <appender-ref ref="RollingFile"/>
     </root>
     <!-- dposblk -->
-    <logger name="org.brewchain.dposblk" level="info" additivity="false">
+    <logger name="org.brewchain.dposblk" level="debug" additivity="false">
         <appender-ref ref="dposblk"/>
     </logger>
 
@@ -119,11 +119,11 @@
     <logger name="org.fc.zippo.scheduler" level="info"/>
 
     <!-- P2P -->
-    <logger name="org.brewchain.p22p" level="error" additivity="false">
+    <logger name="org.brewchain.p22p" level="debug" additivity="false">
         <appender-ref ref="pzp"/>
     </logger>
     <!-- TransIo -->
-    <logger name="onight.osgi.otransio" level="error" additivity="false">
+    <logger name="onight.osgi.otransio" level="debug" additivity="false">
         <appender-ref ref="transio"/>
     </logger>
 </configuration> 
