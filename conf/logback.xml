@@ -71,21 +71,6 @@
         </encoder>
     </appender>
 
-    <!-- dposblk -->
-    <appender name="dposblk" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>./logs/dposblk.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>./logs/dposblk-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>256MB</maxFileSize>
-            <totalSizeCap>20GB</totalSizeCap>
-        </rollingPolicy>
-        <encoder>
-            <pattern>${custom_pattern}</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-    </appender>
-
     <!-- Root -->
     <root level="debug">
         <!-- <appender-ref ref="STDOUT" /> -->
@@ -121,6 +106,10 @@
     <!-- P2P -->
     <logger name="org.brewchain.p22p" level="debug" additivity="false">
         <appender-ref ref="pzp"/>
+    </logger>
+    <!-- vrfblk -->
+    <logger name="org.brewchain.vrfblk" level="debug" additivity="true">
+        <appender-ref ref="vrfblk"/>
     </logger>
     <!-- TransIo -->
     <logger name="onight.osgi.otransio" level="debug" additivity="false">

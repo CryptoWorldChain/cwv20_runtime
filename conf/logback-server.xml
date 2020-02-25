@@ -69,20 +69,6 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
-     <!-- vrfblk -->
-    <appender name="dposblk" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>./logs/dposblk.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>./logs/dposblk-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>256MB</maxFileSize>
-            <totalSizeCap>20GB</totalSizeCap>
-        </rollingPolicy>
-        <encoder>
-            <pattern>${custom_pattern}</pattern>
-            <charset>UTF-8</charset>
-        </encoder>
-    </appender>
 
     <!-- Root -->
     <root level="error">
@@ -90,6 +76,7 @@
     </root>
 
     <!-- vrfblk -->
+    
     <logger name="org.brewchain.vrfblk" level="error" additivity="false">
         <appender-ref ref="vrfblk"/>
     </logger>
