@@ -108,7 +108,7 @@
         <appender-ref ref="pzp"/>
     </logger>
     <!-- vrfblk -->
-    <logger name="org.brewchain.vrfblk" level="debug" additivity="true">
+    <logger name="org.brewchain.vrfblk" level="debug" additivity="false">
         <appender-ref ref="vrfblk"/>
     </logger>
     <!-- TransIo -->
