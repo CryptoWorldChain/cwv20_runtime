@@ -80,7 +80,7 @@
     <logger name="org.brewchain.vrfblk" level="error" additivity="false">
         <appender-ref ref="vrfblk"/>
     </logger>
-    <logger name="org.brewchain.dposblk" level="debug" additivity="false">
+    <logger name="org.brewchain.dposblk" level="error" additivity="false">
         <appender-ref ref="dposblk"/>
     </logger>
 
