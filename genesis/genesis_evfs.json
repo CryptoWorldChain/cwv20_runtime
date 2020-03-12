@@ -1,0 +1,90 @@
+{
+    "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "coinbase": "0000000000000000000000000000000000000000",
+    "timestamp": 1578376943000,
+    "parentHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extraData": "",
+    "height": 0,
+    "accounts": {
+        "97f1bd5e9cae1d7f52bbb2818d80c8ca9392215b": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "0000000000000000000000000000000000000000": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "533a5a084cd587c86c20a0ddfb28f9ad018f341a": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "a0016c0c606fe5f2425cf604bd075caf9ab8c07b21eab4f987a3d54ea617f6d6": {
+            "balance": 0,
+            "name": "链管理组",
+            "nonce": 0,
+            "type": 1,
+            "storages": {
+                "01": "0a03312f3312143c1ea4aa4974d92e0eabd5d024772af3762720a01214533a5a084cd587c86c20a0ddfb28f9ad018f341a1214c60042d114c2a1ba13e154f446badf8e152a923f1214ee155386bf40a7d55f0bef92743adc0c8fb0683c121497f1bd5e9cae1d7f52bbb2818d80c8ca9392215b"
+            }
+        },
+        "7e0d3aabb9e3b0e54a6c3ae2d10f00e7b03b9f3356db26e71e71b4b2b8cb10b0": {
+            "balance": 0,
+            "name": "链委员会",
+            "nonce": 0,
+            "type": 1,
+            "storages": {
+                "01": "0a03312f3312143c1ea4aa4974d92e0eabd5d024772af3762720a01214533a5a084cd587c86c20a0ddfb28f9ad018f341a1214c60042d114c2a1ba13e154f446badf8e152a923f1214ee155386bf40a7d55f0bef92743adc0c8fb0683c121497f1bd5e9cae1d7f52bbb2818d80c8ca9392215b"
+            }
+        },
+        "c60042d114c2a1ba13e154f446badf8e152a923f": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "3c1ea4aa4974d92e0eabd5d024772af3762720a0": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "ee155386bf40a7d55f0bef92743adc0c8fb0683c": {
+            "balance": 1000000000000000000000000000,
+            "name": null,
+            "nonce": 0,
+            "type": 0,
+            "storages": {}
+        },
+        "e3ac3979ff2ca886737472a8e6e86f7e38b4c7ba": {
+            "balance": 0,
+            "name": "前置节点01",
+            "nonce": 0,
+            "type": 0,
+            "storages": {
+                "02": "0a14e3ac3979ff2ca886737472a8e6e86f7e38b4c7ba"
+            }
+        }
+    },
+    "txs": [
+        {
+            "txHash": "c1241f26a143ea73f43f7527143be2c82d17788597048425eed736520241564f98",
+            "nonce": 0,
+            "code_data": "0x08021a143c1ea4aa4974d92e0eabd5d024772af3762720a01a14533a5a084cd587c86c20a0ddfb28f9ad018f341a1a14c60042d114c2a1ba13e154f446badf8e152a923f1a14ee155386bf40a7d55f0bef92743adc0c8fb0683c1a1497f1bd5e9cae1d7f52bbb2818d80c8ca9392215b1a20a0016c0c606fe5f2425cf604bd075caf9ab8c07b21eab4f987a3d54ea617f6d62209056bc75e2d631000002209056bc75e2d631000002209056bc75e2d631000002209056bc75e2d631000002209056bc75e2d63100000220b0771e8a962ad1040000000520945565320546f6b656e5a034556536012",
+            "timestamp": 1583853064448,
+            "inner_codetype": 2,
+            "sign": "be2f1ac3db2fa6baeb5013490e3c9d5230700a6699d3e7442dc0dcf36b66b5c72cae8251aeda966aa251690ca65bd98521be21e4e2970cf3c301739d2bc5cb3d39202ccfcedf5c1a28c91285815e84092aa2c7ef08786c5de3623628a2c94e574a1a8bb8907d70d9b40327c2b4911c3b1f0c92f6d15ab5d76c428fbeeb0983151bee66806e36f782a68d264e4c161442908eb7d2",
+            "address": "3c1ea4aa4974d92e0eabd5d024772af3762720a0"
+        }
+    ]
+}
