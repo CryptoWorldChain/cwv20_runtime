@@ -106,7 +106,8 @@
     <logger name="onight.osgi.otransio.impl.ModuleDiscovery" level="error"/>
 
     <!-- P2P -->
-    <logger name="org.brewchain.p22p" level="info" additivity="false">
+    <logger name="org.brewchain.p22p" level="infols
+    " additivity="false">
         <appender-ref ref="pzp"/>
     </logger>
     <!-- TransIo -->
