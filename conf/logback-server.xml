@@ -103,10 +103,11 @@
     <logger name="onight.tfw.ntrans.osgi" level="error"/>
     <logger name="onight.tfw.servlet" level="error"/>
     <logger name="onight.tfw.ojpa" level="error"/>
+    <logger name="org.brewchain.p22p.action.PZPHeatBeatService" level="info"/>
     <logger name="onight.osgi.otransio.impl.ModuleDiscovery" level="error"/>
 
     <!-- P2P -->
-    <logger name="org.brewchain.p22p" level="error" additivity="false">
+    <logger name="org.brewchain.p22p" level="debug" additivity="false">
         <appender-ref ref="pzp"/>
     </logger>
     <!-- TransIo -->
