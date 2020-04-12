@@ -2,6 +2,15 @@
     "body": {
         "hash": "0000000000000000000000000000000000000000000000000000000000000000",
         "coinbase": "0000000000000000000000000000000000000000",
+        "chainconfig": {
+        	"address":"0000000000000000000000000000000000000001",
+        	"blocked_tx_count":1,
+        	"block_rewards":"0x2c0194c7c561baf8",
+        	"block_mine_epoch_ms":1000,
+        	"block_mine_timeout_ms":30000,
+        	"block_mine_max_continue":10,
+        	"version":1
+        }
         "timestamp": 1578376943000,
         "parentHash": "0000000000000000000000000000000000000000000000000000000000000000",
         "accounts": [
