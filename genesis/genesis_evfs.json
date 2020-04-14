@@ -1,7 +1,7 @@
 {
 	"chainconfig": {
         	"address":"0000000000000000000000000000000000000001",
-        	"blocked_tx_count":1,
+        	"blocked_tx_count":0,
         	"block_rewards":"0x2c0194c7c561baf8",
         	"block_mine_epoch_ms":1000,
         	"block_mine_timeout_ms":30000,
