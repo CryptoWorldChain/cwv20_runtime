@@ -39,6 +39,21 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
+    
+      <!-- Scheduler -->
+    <appender name="ddc" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./logs/ddc.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>./logs/ddc-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>256MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${custom_pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
 
     <!-- P2P -->
     <appender name="pzp" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -82,6 +97,10 @@
     </logger>
     <logger name="org.brewchain.dposblk" level="error" additivity="false">
         <appender-ref ref="dposblk"/>
+    </logger>
+    
+     <logger name="org.fc.zippo.scheduler" level="info" additivity="false">
+        <appender-ref ref="ddc"/>
     </logger>
 
     <!-- Third package -->
