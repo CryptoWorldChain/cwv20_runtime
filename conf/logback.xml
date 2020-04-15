@@ -71,6 +71,20 @@
         </encoder>
     </appender>
 
+   <!-- Scheduler -->
+    <appender name="ddc" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./logs/ddc.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>./logs/ddc-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>256MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${custom_pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
     <!-- Root -->
     <root level="debug">
         <!-- <appender-ref ref="STDOUT" /> -->
@@ -114,5 +128,9 @@
     <!-- TransIo -->
     <logger name="onight.osgi.otransio" level="debug" additivity="false">
         <appender-ref ref="transio"/>
+    </logger>
+    
+     <logger name="org.fc.zippo.scheduler" level="info" additivity="false">
+        <appender-ref ref="ddc"/>
     </logger>
 </configuration> 
