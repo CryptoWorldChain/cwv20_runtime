@@ -94,7 +94,7 @@
     <logger name="org.brewchain.dposblk" level="debug" additivity="false">
         <appender-ref ref="dposblk"/>
     </logger>
-
+    
     <!-- Third package -->
     <logger name="org.eclipse.jetty" level="info"/>
     <logger name="org.apache" level="trace"/>
@@ -129,6 +129,7 @@
     <logger name="onight.osgi.otransio" level="debug" additivity="false">
         <appender-ref ref="transio"/>
     </logger>
+    
     
      <logger name="org.fc.zippo.scheduler" level="info" additivity="false">
         <appender-ref ref="ddc"/>

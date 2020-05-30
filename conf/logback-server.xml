@@ -129,6 +129,9 @@
     <logger name="org.brewchain.p22p" level="info" additivity="false">
         <appender-ref ref="pzp"/>
     </logger>
+    <logger name="io.lettuce" level="info" additivity="false">
+        <appender-ref ref="redis"/>
+    </logger>
     <!-- TransIo -->
     <logger name="onight.osgi.otransio" level="error" additivity="false">
         <appender-ref ref="transio"/>
