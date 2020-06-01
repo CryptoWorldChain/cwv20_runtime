@@ -4,6 +4,7 @@ nohup java -Xmx16G -Xmx16G -DRUN_PATH=`pwd` -cp sbin/felix.jar:sbin/protobuf-jav
 	 -Dorg.bc.dpos.force.reset.vote.term=1 -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+UseAdaptiveSizePolicy \
 	 -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -Duser.timezone=GMT+08 \
 	 -Dorg.brewchain.man.dev=false  -Dorg.bc.manage.node.net=prodnet \
+	 -Dorg.apache.felix.http.jetty.acceptors=64 \
 	 -Dlogback.configurationFile=conf/logback-server.xml org.apache.felix.main.Main &
 
 
