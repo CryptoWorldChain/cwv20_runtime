@@ -5,6 +5,8 @@ nohup java -Xmx16G -Xmx16G -DRUN_PATH=`pwd` -cp sbin/felix.jar:sbin/protobuf-jav
 	 -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -Duser.timezone=GMT+08 \
 	 -Dorg.brewchain.man.dev=false  -Dorg.bc.manage.node.net=prodnet \
 	 -Dorg.apache.felix.http.jetty.acceptors=64 \
+	 -Dorg.bc.pzp.networks.loc.id=$HOSTNAME \
+	 -Dorg.bc.pzp.networks.loc.gwuris=$HOSTNAME:5100 \
 	 -Dlogback.configurationFile=conf/logback-server.xml org.apache.felix.main.Main &
 
 
