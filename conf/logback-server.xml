@@ -86,7 +86,7 @@
     </appender>
 
     <!-- Root -->
-    <root level="error">
+    <root level="debug">
         <appender-ref ref="RollingFile"/>
     </root>
 
