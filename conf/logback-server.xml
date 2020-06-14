@@ -133,7 +133,7 @@
         <appender-ref ref="redis"/>
     </logger>
     <!-- TransIo -->
-    <logger name="onight.osgi.otransio" level="debug" additivity="false">
+    <logger name="onight.osgi.otransio" level="error" additivity="false">
         <appender-ref ref="transio"/>
     </logger>
 </configuration>
