@@ -86,7 +86,7 @@
     </appender>
 
     <!-- Root -->
-    <root level="debug">
+    <root level="error">
         <appender-ref ref="RollingFile"/>
     </root>
 
@@ -126,14 +126,14 @@
     <logger name="onight.osgi.otransio.impl.ModuleDiscovery" level="error"/>
 
     <!-- P2P -->
-    <logger name="org.brewchain.p22p" level="info" additivity="false">
+    <logger name="org.brewchain.p22p" level="error" additivity="false">
         <appender-ref ref="pzp"/>
     </logger>
-    <logger name="io.lettuce" level="info" additivity="false">
+    <logger name="io.lettuce" level="error" additivity="false">
         <appender-ref ref="redis"/>
     </logger>
     <!-- TransIo -->
-    <logger name="onight.osgi.otransio" level="info" additivity="false">
+    <logger name="onight.osgi.otransio" level="error" additivity="false">
         <appender-ref ref="transio"/>
     </logger>
 </configuration>
