@@ -4,7 +4,7 @@
         	"blocked_tx_count":0,
         	"block_rewards":"0x2c0194c7c561baf8",
         	"block_mine_epoch_ms":1000,
-        	"block_mine_timeout_ms":30000,
+        	"block_mine_timeout_ms":60000,
         	"block_mine_max_continue":10,
         	"version":1
      },
