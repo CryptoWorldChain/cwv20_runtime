@@ -19,3 +19,4 @@ felix-cache/
 db/
 gradlew*
 hs_err*.log
+.idea
