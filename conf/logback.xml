@@ -85,6 +85,20 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
+    <!-- EVFS -->
+    <appender name="evfs" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>./logs/evfs.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>./logs/evfs-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <maxFileSize>256MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${custom_pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
     <!-- Root -->
     <root level="debug">
         <!-- <appender-ref ref="STDOUT" /> -->
@@ -124,6 +138,10 @@
     <!-- vrfblk -->
     <logger name="org.brewchain.vrfblk" level="debug" additivity="false">
         <appender-ref ref="vrfblk"/>
+    </logger>
+     <!-- evfs -->
+    <logger name="org.brewchain.evfs" level="debug" additivity="false">
+        <appender-ref ref="evfs"/>
     </logger>
     <!-- TransIo -->
     <logger name="onight.osgi.otransio" level="debug" additivity="false">
